@@ -61,7 +61,7 @@ The dex overlord has a an API which is very powerful - you can create Admin user
 
 # Start the overlord
 
-The overlord is responsible for creating and rotating keys and some other adminsitrative tasks. In addition, the overlord is responsible for creating the necessary database tables (and when you update, performing schema migrations), so it must be started before we do anything else. Debug logging is turned on so we can see more of what's going on. Start it up.
+The overlord is responsible for creating and rotating keys and some other administrative tasks. In addition, the overlord is responsible for creating the necessary database tables (and when you update, performing schema migrations), so it must be started before we do anything else. Debug logging is turned on so we can see more of what's going on. Start it up.
 
 `./bin/dex-overlord --admin-api-secret=$DEX_OVERLORD_ADMIN_API_SECRET --db-url=$DEX_DB_URL --key-secrets=$DEX_KEY_SECRET --log-debug=true &`
 
